@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f3f5f7;
+}
+.top {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100px;
+    line-height: 100px;
+    background-color: pink;
+    /* line-hight导致盒子部分会溢出 */
+    overflow: hidden;
+}
+.top .logo {
+    float: left;
+}
+.top .one {
+    float: left;
+}
+.top .one .two li {
+    float: left;
+    list-style: none;
+}
+
+.box .bannaer {
+    height: 421px;
+    background-color: #1c036c;
+}
+.box .bannaer .siderbar {
+    margin: 0 auto;
+    width: 1200px;
+    height: 421px;
+}
+.box .bannaer .siderbar-left {
+    float: left;
+    height: 421px;
+    width: 150px;
+    background-color: #14024c;
+    list-style: none;
+}
+.box .bannaer .siderbar-right {
+    float: right;
+    width: 230px;
+    height: 300px;
+    background-color: #fff;
+    text-align: center;
+}
+.box .bannaer .siderbar-right .my-class {
+    background-color: #9bceea;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+    line-height: 48px;
+    color: #fff;
+}
+.box .bannaer .siderbar-right .class-details ul li{
+    list-style: none;
+    padding: 14px 0;
+    width: 190px;
+    height: 37px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+.box .bannaer .siderbar-right .bd .class-details {
+    background-color: #fff;
+}
+.box .bannaer .siderbar-right .bd .class-details ul h3 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.box .bannaer .siderbar-right .bd .class-details ul p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box .bannaer .siderbar-right .bd {
+    padding: 0 15px;
+}
+.box .bannaer .siderbar-right .all-class {
+    display: block;
+    font-weight: 800;
+    text-align: center;
+    height: 38px;
+    width: 188px;
+    line-height: 38px;
+    font-size: 18px;
+    color: #3fa9ff;
+    border: 1px solid #3fa9ff;
+    margin-top: 10px;
+}
+
+
+
+
+
+.box .bannaer .siderbar li {
+    height: 46px;
+    text-indent: 1em;
+}
+.box .bannaer .siderbar .siderbar-left li::after {
+    content: '>';
+    padding-left: 50px;
+    color: #fff;
+}
+.box .bannaer .siderbar a {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 46px;
+    color: #fff;
+}
+
+
+
+
+/* 第三块 */
+.box .section {
+    margin:10px auto;
+    width: 1200px;
+    height: 60px;
+    /* background-color: pink; */
+}
+.box .section .hobbies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    /* border: 1px solid #e4e6e8; */
+    box-shadow: 0 0 3px -1px;
+}
+.box .section .hobbies .hobby1 {
+    display: inline-block;
+    /* background-color: blue; */
+    text-align: center;
+    width: 100px;
+    line-height: 60px;
+}
+.box .section .hobbies .hobby2 {
+    display: inline-block;
+}
+
+
+.box .section .hobbies .hobby2 ul li{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    list-style: none;
+    font-size: 18px;
+    /* background-color: gray; */
+    padding: 0 20px;
+    line-height: 30px;
+    border-left: 2px solid blue;
+}
+.box .section .hobbies .hobby3 {
+    float: right;
+    width: 100px;
+    text-align: center;
+    /* background-color: blue; */
+    line-height: 60px;
+}
+.box .section .tips {
+    width: 1200px;
+    height: 600px;
+    /* background-color: pink; */
+
+}
+/* 精品推荐 查看全部 */
+.box .section .tips .tips1 {
+    width: 1200px;
+    height: 20px;
+    /* background-color: blue; */
+    /* overflow: hidden; */
+}
+.box .section .tips .tips11 {
+    float: left;
+    /* display: inline-block; */
+    width: 100px;
+    font-size: 20px;
+    background-color: green;
+}
+.box .section .tips .tips12 {
+    float: right;
+    /* display: inline-block; */
+    width: 100px;
+    font-size: 12px;
+    background-color: red;
+}
+.box .section .tips .tips2 {
+    margin-top: 20px;
+}
+
+/* 消除浮动代码 */
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  .clearfix {
+     *zoom:1;
+  }   
+
+
+
+.box .section .tips .tips2 ul {
+    width: 1225px;
+    overflow: hidden;
+}
+.box .section .tips .tips2 ul li{
+    float: left;
+    /* display: inline-block; */
+    width: 228px;
+    height: 270px;
+    list-style: none;
+    background-color: #fff;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.box .section .tips .tips2 ul li img {
+    width: 228px;
+}
+.box .section .tips .tips2 ul li div .tips21 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+}
+.box .section .tips .tips2 ul li div .tips22 {
+    margin: 0px 20px 0px 25px;
+    font-size: 12px;
+    color: #999;
+}
+.box .section .tips .tips2 ul li div span {
+    color:#ff7c2d;
+}
+
+
+.box .section {
+    height: 700px;
+    /* background-color: gray; */
+}
+/* 第四块 */
+
+.box .footer {
+    height: 415px;
+    background-color: #fff;
+}
+
+.box .footer1 {
+    width: 1200px;
+    height: 415px;
+    /* border-top: 5px solid red; */
+    /* background-color: gray; */
+    margin: 0 auto;
+    margin-bottom: 300px;
+    
+}
+
+.box .footer .footer1 .footer-left {
+    /* display: inline-block; */
+    float: left;
+    width: 432px;
+    height: 148px;
+    margin-top: 50px;
+    /* background-color: skyblue; */
+}
+.box .footer .footer1 .footer-left img {
+    width: 195px;
+}
+.box .footer .footer1 .footer-left p {
+
+    font-size: 12px;
+    text-indent: 2em;
+    margin-top: 10px;
+}
+.box .footer .footer1 .footer-left a {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    border: 1px solid #00a4ff;
+    color: #00a4ff;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+}
+.box .footer .footer1 .footer-right {
+    /* display: inline-block; */
+    float: right;
+    width: 540px;
+    height: 131px;
+    margin-top: 50px;
+    /* background-color: yellow; */
+}
+.box .footer .footer1 .footer-right ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 70px;
+}
+.box .footer .footer1 .footer-right ul li dl a {
+    text-decoration: none;
+    color:#333;
+}
+.box .footer .footer1 .footer-right ul li dl dt {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.box .footer .footer1 .footer-right ul li dl dd {
+    font-size: 12px;
+}
